@@ -17,7 +17,7 @@ Automate your Bless Network node management with this Python-based script. Manag
 To connect to the Bless Network, you’ll need your **authToken**:
 1. Create an account on the Bless Network Website [hhttps://bless.network/dashboard](https://bless.network/dashboard?ref=WBY5T8)
 2. Log in to your chrome extension.
-3. Press `F12` to open Developer Tools in your browser.
+3. Press `F12` to open Developer Tools in your extension or right click on the opened extension.
 4. Go to the **Console** tab and enter:
    ```javascript
    chrome.storage.local.get("authToken", function(data) {
