@@ -91,6 +91,12 @@ The script is working at the moment but it can stop any day so take advantage of
 If you have questions or run into issues, hit me up on Discord or Telegram:
 
 ---
+##  **💸Donations**
+If you would like to support me or the development of this projects, you can make a donation using the following addresses:
+- **Solana :** ```9SqcZjiUAz9SYBBLwuA9uJG4UzwqC5HNWV2cvXPk3Kro```
+- **EVM :** ```0x2d550c8A47c60A43F8F4908C5d462184A40922Ef```
+- **BTC :** `bc1qhx7waktcttam9q9nt0ftdguguwg5lzq5hnasmm`
+---
 
 ## **Social Links**
 - **Discord Community**: [Join Now](https://discord.gg/Z58YmYwr)
