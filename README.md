@@ -18,6 +18,7 @@ To connect to the Bless Network, you’ll need your **authToken**:
 1. Create an account on the Bless Network Website [hhttps://bless.network/dashboard](https://bless.network/dashboard?ref=WBY5T8)
 2. Log in to your chrome extension.
 3. Press `F12` to open Developer Tools in your extension or right click on the opened extension.
+![image](https://github.com/user-attachments/assets/227cbdef-f607-4be5-af33-752c6dcbd657)
 4. Go to the **Console** tab and enter:
    ```javascript
    chrome.storage.local.get("authToken", function(data) {
@@ -25,6 +26,8 @@ To connect to the Bless Network, you’ll need your **authToken**:
     });
    ```
 5. Copy the ```authToken``` shown in the console and save it for later.
+![image](https://github.com/user-attachments/assets/e1aa44f8-81df-4bf9-9193-fe36dab70fde)
+
 
 ## **Get Your peerPubKey**
 6. Extract ```peerPubKey``` 
