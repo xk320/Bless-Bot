@@ -1,7 +1,7 @@
 # Bless Network Bot v1.0 - Automate Node Management and Mining
 Automate your Bless Network node management with this Python-based script. Manage multiple devices, handle WebSocket connections, and maximize your node earnings 24/7! Perfect for VPS setups.
 
-![License](https://img.shields.io/badge/License-MIT-green.svg)
+![AGPL License](https://img.shields.io/badge/License-AGPL%20v3-blue.svg)
 
 ---
 
