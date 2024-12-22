@@ -1,4 +1,4 @@
-# Bless Network Bot v1.0 - Automate Node Management and Mining
+# Bless Network Bot v1.1 - Automate Node Management and Mining
 Automate your Bless Network node management with this Python-based script. Manage multiple devices, handle WebSocket connections, and maximize your node earnings 24/7! Perfect for VPS setups.
 
 ![AGPL License](https://img.shields.io/badge/License-AGPL%20v3-blue.svg)
@@ -40,11 +40,16 @@ This will print something like:
 ```javascript
 {
   "peerEncryptedPrivKey": "m9+YyMXk7N1daxSR...",
-  "peerPubKey": "12D................................2bk"
+  "peerPubKey": "12D..................................k"
 }
 ```
-7. Save the ```authToken``` and ```peerPubKey``` these are essential for the Python script.
 
+## **Get Your Hardware ID**
+7. As you have extracted the previous ```authToken``` and ```peerPubKey``` from the Console Tab, move to the Network Tab on the top and wait for a ping request to be sent.
+8. Once the request is seen on the Network Tab, click on it and move to the `Response` section and copy the *Hardware ID*.
+9. The *Hardware ID* stays the same for all Nodes on one account.
+![image](https://github.com/user-attachments/assets/7a01b848-3a36-4db2-b315-38e048ea773a)
+ 
 ## **Multiple Nodes**
 1. You can remove the extension after obtaining its ```peerPubKey``` and download it again to get a new one.
 2. Repeat this process as many times as you like.
@@ -58,6 +63,16 @@ This will print something like:
 - **VPS Server**: Use AWS, Google Cloud, or any cheap VPS (~$2-5/month).
 
 ---
+## **If You Want To Buy Proxies From My Recommended Provider Follow These Steps**
+1. Go to [https://app.proxies.fo](https://app.proxies.fo/ref/f1353b58-10c4-98a5-d94d-6164e2efcfaf) and Sign Up.
+2. *Please use my refferal link before signing up, it helps me and the cause*: [My refferal link](https://app.proxies.fo/ref/f1353b58-10c4-98a5-d94d-6164e2efcfaf)
+3. Go to the ISP section, DONOT BUY THE RESIDENTIAL PLAN OR ELSE THIS WON'T WORK:
+![image](https://github.com/user-attachments/assets/1337a21b-7a3c-4e18-9335-45a541c29d99)
+
+4. Buy one of these plans, remember DONOT BUY THE RESIDENTIAL PLAN ONLY BUY THE ISP PLAN:
+ ![image](https://github.com/user-attachments/assets/a4d94623-025a-459f-85d8-771975e7a503)
+5. Please use my refferal link before signing up, it helps me and the cause: [My refferal link](https://app.proxies.fo/ref/f1353b58-10c4-98a5-d94d-6164e2efcfaf)
+
 
 ## **Setup Instructions**
 ### Step 1: Clone the Repository
@@ -71,11 +86,8 @@ cd BlessNetworkBot
 pip install -r requirements.txt
 ```
 
-### Step 3: Update the Script
-1. Open `main.py` in a text editor.
-2. Replace the placeholder `your_auth_token_here` (Line 7) with your actual **authToken**.
-3. Replace the Node IDs (Line 15).
-
+### Step 3: Update the data.py file
+Add proxies and all the extracted info into the `data.py` file.
 
 ### Step 4: Run the Script
 ```bash
@@ -85,6 +97,9 @@ python3 main.py
 
 ## **Note**
 The script is working at the moment but it can stop any day so take advantage of it.
+**You can check out my Medium article for a more detailed and comprehensive guide.**
+
+[https://medium.com/@FakerPK/bless-network-bot-v1-0-automate-node-management-and-mining-6f017d47bb44](https://medium.com/@FakerPK/bless-network-bot-v1-0-automate-node-management-and-mining-6f017d47bb44)
 ---
 
 ## **Contact for Support**
