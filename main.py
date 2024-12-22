@@ -1,5 +1,6 @@
 import asyncio
 import aiohttp
+from aiohttp_socks import ProxyConnector
 import json
 import random
 import os
@@ -23,7 +24,7 @@ class Node:
 
 async def fetch_ip_address(session, proxy=None):
     try:
-        async with session.get("https://api.ipify.org?format=json", proxy=proxy) as response:
+        async with session.get("https://api.ipify.org?format=json") as response:
             data = await response.json()
             return data["ip"]
     except Exception as e:
@@ -50,7 +51,7 @@ async def register_node(session, node, ip_address, auth_token):
     }
     
     try:
-        async with session.post(url, headers=headers, json=body, proxy=node.proxy) as response:
+        async with session.post(url, headers=headers, json=body) as response:
             data = await response.json()
             if response.status == 200:
                 print(f"{Fore.GREEN}[ℹ️ INFO]  ✅ Registered node {node.node_id}{Style.RESET_ALL}")
@@ -71,7 +72,7 @@ async def start_session(session, node, auth_token):
     body = {}  # Empty JSON body
     
     try:
-        async with session.post(url, headers=headers, json=body, proxy=node.proxy) as response:
+        async with session.post(url, headers=headers, json=body) as response:
             data = await response.json()
             if response.status == 200:
                 print(f"{Fore.GREEN}[ℹ️ INFO]  ✅ Started session for node {node.node_id}{Style.RESET_ALL}")
@@ -92,7 +93,7 @@ async def ping_node(session, node, auth_token):
     body = {}  # Empty JSON body
     
     try:
-        async with session.post(url, headers=headers, json=body, proxy=node.proxy) as response:
+        async with session.post(url, headers=headers, json=body) as response:
             data = await response.json()
             if response.status == 200 and data.get("status", "").lower() == "ok":
                 print(f"{Fore.CYAN}[ℹ️ INFO]  📡 Successful ping for node {node.node_id}{Style.RESET_ALL}")
@@ -131,21 +132,17 @@ async def process_node(session, node, ip_address, auth_token):
         await asyncio.sleep(PROCESS_RESTART_DELAY)
 
 async def main():
-    print(f"""{Fore.CYAN}
+    print(f"""{Fore.YELLOW}
  ______    _             _____  _  __
 |  ____|  | |           |  __ \| |/ /
 | |__ __ _| | _____ _ __| |__) | ' / 
 |  __/ _` | |/ / _ \ '__|  ___/|  <  
 | | | (_| |   <  __/ |  | |    | . \ 
-|_|  \__,_|_|\_\___|_|  |_|    |_|\_\
-                                     
-                                     
-Bless Network Bot! AUTOMATE AND DOMINATE
-==================================={Style.RESET_ALL}
+|_|  \__,_|_|\_\___|_|  |_|    |_|\_\ {Style.RESET_ALL}
     """)
 
-    print(f"{Fore.MAGENTA}Created by {Fore.YELLOW}Airdrop Insider{Style.RESET_ALL}")
-    print(f"{Fore.MAGENTA}Modified by {Fore.YELLOW}fakerpk{Style.RESET_ALL}")
+    print(f"{Fore.MAGENTA}Bless Network Bot! AUTOMATE AND DOMINATE{Style.RESET_ALL}")
+    print(f"{Fore.RED}========================================{Style.RESET_ALL}")
 
     choice = input(f"{Fore.CYAN}Please select an option:\n{Fore.GREEN}1. Start mining (using data from data.py)\n{Fore.GREEN}2. Add new information interactively\n{Fore.YELLOW}Enter your choice (1 or 2): {Style.RESET_ALL}")
 
