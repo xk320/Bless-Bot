@@ -1,4 +1,4 @@
-# Bless Network Bot v1.1 - Automate Node Management and Mining
+# Bless Network Bot v1.2 - Automate Node Management and Mining, No Hardware ID Needed!
 Automate your Bless Network node management with this Python-based script. Manage multiple devices, handle WebSocket connections, and maximize your node earnings 24/7! Perfect for VPS setups.
 
 ![AGPL License](https://img.shields.io/badge/License-AGPL%20v3-blue.svg)
@@ -44,12 +44,6 @@ This will print something like:
 }
 ```
 
-## **Get Your Hardware ID**
-7. As you have extracted the previous ```authToken``` and ```peerPubKey``` from the Console Tab, move to the Network Tab on the top and wait for a ping request to be sent.
-8. Once the request is seen on the Network Tab, click on it and move to the `Response` section and copy the *Hardware ID*.
-9. The *Hardware ID* stays the same for all Nodes on one account.
-![image](https://github.com/user-attachments/assets/7a01b848-3a36-4db2-b315-38e048ea773a)
- 
 ## **Multiple Nodes**
 1. You can remove the extension after obtaining its ```peerPubKey``` and download it again to get a new one.
 2. Repeat this process as many times as you like.
