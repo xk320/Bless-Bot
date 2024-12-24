@@ -4,26 +4,22 @@ config = [
         "nodes": [
             {
                 "nodeId": "PUB_KEY_1",
-                "hardwareId": "HARDWARE_ID", #stays same for all nodes
                 "proxy": ""  #format: socks5://username:pass@ip:port
             },
             {
                 "nodeId": "PUB_KEY_2",
-                "hardwareId": "HARDWARE_ID", #stays same for all nodes
                 "proxy": ""  #format: socks5://username:pass@ip:port
             },
             {
                 "nodeId": "PUB_KEY_3",
-                "hardwareId": "HARDWARE_ID", #stays same for all nodes
                 "proxy": ""  #format: socks5://username:pass@ip:port
             },
             {
                 "nodeId": "PUB_KEY_4",
-                "hardwareId": "HARDWARE_ID", #stays same for all nodes
                 "proxy": ""  #format: socks5://username:pass@ip:port
             },
             {
-                "nodeId": "PUB_KEY_4",
+                "nodeId": "PUB_KEY_5",
                 "hardwareId": "HARDWARE_ID", #stays same for all nodes
                 "proxy": ""  #format: socks5://username:pass@ip:port
             },
@@ -34,27 +30,22 @@ config = [
         "nodes": [
             {
                 "nodeId": "PUB_KEY_1",
-                "hardwareId": "HARDWARE_ID", #stays same for all nodes
                 "proxy": ""  #format: socks5://username:pass@ip:port
             },
             {
                 "nodeId": "PUB_KEY_2",
-                "hardwareId": "HARDWARE_ID", #stays same for all nodes
                 "proxy": ""  #format: socks5://username:pass@ip:port
             },
             {
                 "nodeId": "PUB_KEY_3",
-                "hardwareId": "HARDWARE_ID", #stays same for all nodes
                 "proxy": ""  #format: socks5://username:pass@ip:port
             },
             {
                 "nodeId": "PUB_KEY_4",
-                "hardwareId": "HARDWARE_ID", #stays same for all nodes
                 "proxy": ""  #format: socks5://username:pass@ip:port
             },
             {
                 "nodeId": "PUB_KEY_5",
-                "hardwareId": "HARDWARE_ID", #stays same for all nodes
                 "proxy": ""  #format: socks5://username:pass@ip:port
             }
         ]
