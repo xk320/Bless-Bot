@@ -1,3 +1,4 @@
-requests
 aiohttp
+aiohttp-socks
 colorama
+psutil
