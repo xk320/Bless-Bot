@@ -15,11 +15,11 @@ init(autoreset=True)  # Initialize colorama
 
 API_BASE_URL = "https://gateway-run.bls.dev/api/v1"
 MAX_PING_ERRORS = 3
-PING_INTERVAL = 60  # seconds
-RESTART_DELAY = 240  # seconds
-PROCESS_RESTART_DELAY = 150  # seconds
+PING_INTERVAL = 60  
+RESTART_DELAY = 240  
+PROCESS_RESTART_DELAY = 150  
 MAX_REGISTRATION_RETRIES = 5
-REGISTRATION_RETRY_DELAY = 30  # seconds
+REGISTRATION_RETRY_DELAY = 30  
 
 def generate_hardware_id():
     system_info = f"{platform.node()}-{platform.machine()}-{platform.processor()}-{str(uuid.getnode())}"
