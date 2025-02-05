@@ -164,16 +164,17 @@ async def process_node(session, node, ip_address, auth_token):
         await asyncio.sleep(PROCESS_RESTART_DELAY)
 
 async def main():
-    print(f"""{Fore.YELLOW}
- ______    _             _____  _  __
-|  ____|  | |           |  __ \| |/ /
-| |__ __ _| | _____ _ __| |__) | ' / 
-|  __/ _` | |/ / _ \ '__|  ___/|  <  
-| | | (_| |   <  __/ |  | |    | . \ 
-|_|  \__,_|_|\_\___|_|  |_|    |_|\_\ {Style.RESET_ALL}
+    print(f"""{Fore.YELLOW + Style.BRIGHT}
+    ███████╗ █████╗ ██╗  ██╗███████╗██████╗  ██████╗ ██╗  ██╗ 
+    ██╔════╝██╔══██╗██║ ██╔╝██╔════╝██╔══██╗ ██╔══██╗██║ ██╔╝ 
+    █████╗  ███████║█████╔╝ █████╗  ██████╔╝ ██████╔╝█████╔╝  
+    ██╔══╝  ██╔══██║██╔═██╗ ██╔══╝  ██╔══██╗ ██╔═══╝ ██╔═██╗  
+    ██║     ██║  ██║██║  ██╗███████╗██║  ██║ ██║     ██║  ██╗     
+    ╚═╝     ╚═╝  ╚═╝╚═╝  ╚═╝╚══════╝╚═╝  ╚═╝ ╚═╝     ╚═╝  ╚═╝     
+{Style.RESET_ALL}
     """)
 
-    print(f"{Fore.MAGENTA}Bless Network Bot! AUTOMATE AND DOMINATE{Style.RESET_ALL}")
+    print(f"{Fore.MAGENTA + Style.BRIGHT}Bless Network Bot! AUTOMATE AND DOMINATE{Style.RESET_ALL}")
     print(f"{Fore.RED}========================================{Style.RESET_ALL}")
 
     choice = input(f"{Fore.CYAN}Please select an option:\n{Fore.GREEN}1. Start mining (using data from data.py)\n{Fore.GREEN}2. Add new information interactively\n{Fore.YELLOW}Enter your choice (1 or 2): {Style.RESET_ALL}")
