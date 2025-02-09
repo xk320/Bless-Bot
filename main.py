@@ -1,3 +1,6 @@
+# Copyright (C) 2025 FakerPK
+# Licensed under the AGPL-3.0: https://www.gnu.org/licenses/agpl-3.0.html
+# This software is provided "as-is" without any warranties.
 import asyncio
 import aiohttp
 from aiohttp_socks import ProxyConnector
