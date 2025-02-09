@@ -12,24 +12,20 @@ Automate your Bless Network node management with this Python-based script. Manag
 * Works seamlessly for better reliability.
 
 ---
-
+### Use My Refferal:
+- [My Refferal Link For Bless Network](https://bless.network/dashboard?ref=WBY5T8)
 ## **Get Your authToken**
 To connect to the Bless Network, you’ll need your **authToken**:
 1. Create an account on the Bless Network Website [hhttps://bless.network/dashboard](https://bless.network/dashboard?ref=WBY5T8)
-2. Log in to your chrome extension.
-3. Press `F12` to open Developer Tools in your extension or right click on the opened extension.
-![image](https://github.com/user-attachments/assets/227cbdef-f607-4be5-af33-752c6dcbd657)
-4. Go to the **Console** tab and enter:
-   ```javascript
-   chrome.storage.local.get("authToken", function(data) {
-    console.log("Auth Token:", data.authToken);
-    });
-   ```
-5. Copy the ```authToken``` shown in the console and save it for later.
-![image](https://github.com/user-attachments/assets/e1aa44f8-81df-4bf9-9193-fe36dab70fde)
+2. Log in to your account.
+3. Press `CTRL + SHIFT + C` or `F12` on Windows to open Developer Tools .
+4. Go to the **Application** tab and enter:
+5. Copy the ```B7S_AUTH_TOKEN``` shown in the screenshot and save it for later.
+![image](https://github.com/user-attachments/assets/5808a866-b647-4afc-8d61-1a000ce301c1)
 
 
 ## **Get Your peerPubKey**
+6.`Inspect Element` into your extension and go to the `Console` tab.
 6. Extract ```peerPubKey``` 
   ```javascript
   chrome.storage.local.get("nodeData", function(data) {
@@ -48,6 +44,12 @@ This will print something like:
 1. You can remove the extension after obtaining its ```peerPubKey``` and download it again to get a new one.
 2. Repeat this process as many times as you like.
 3. There is a cap of 5 devices so no need to go all out.
+> **SECRET INFO**:
+> The 5 `PubKeys` you extract from one account, can be used with other accounts.
+> 
+> Remove your extension then create a new account with your refferal code and extract the `B7S_AUTH_TOKEN`.
+> 
+> Add the `B7S_AUTH_TOKEN` to the `usertoken` field in the ``data.py`` and copy paste the ``PubKeys`` from before and run the script.
 
 ## **Requirements**
 - **Python**: Install it from [python.org](https://www.python.org/downloads/) or use the command below for Ubuntu:
