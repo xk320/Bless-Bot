@@ -26,7 +26,8 @@ To connect to the Bless Network, you’ll need your **authToken**:
 
 ## **Get Your peerPubKey**
 6.`Inspect Element` into your extension and go to the `Console` tab.
-6. Extract ```peerPubKey``` 
+
+7. Extract ```peerPubKey``` 
   ```javascript
   chrome.storage.local.get("nodeData", function(data) {
     console.log("Node Data:", data.nodeData);
@@ -96,19 +97,29 @@ The script is working at the moment but it can stop any day so take advantage of
 **You can check out my Medium article for a more detailed and comprehensive guide.**
 
 [https://medium.com/@FakerPK/bless-network-bot-v1-0-automate-node-management-and-mining-6f017d47bb44](https://medium.com/@FakerPK/bless-network-bot-v1-0-automate-node-management-and-mining-6f017d47bb44)
----
-
-## **Contact for Support**
-If you have questions or run into issues, hit me up on Discord or Telegram:
 
 ---
 ##  **💸Donations**
 If you would like to support me or the development of this projects, you can make a donation using the following addresses:
-- **Solana :** ```9SqcZjiUAz9SYBBLwuA9uJG4UzwqC5HNWV2cvXPk3Kro```
-- **EVM :** ```0x2d550c8A47c60A43F8F4908C5d462184A40922Ef```
-- **BTC :** `bc1qhx7waktcttam9q9nt0ftdguguwg5lzq5hnasmm`
----
+- **Solana :**
+```bash
+9SqcZjiUAz9SYBBLwuA9uJG4UzwqC5HNWV2cvXPk3Kro
+```
+- **EVM :**
+```bash
+0x2d550c8A47c60A43F8F4908C5d462184A40922Ef
+```
+- **BTC :**
+```bash
+bc1qhx7waktcttam9q9nt0ftdguguwg5lzq5hnasmm
+```
+----
+## Support 🆘  
+Contact `FakerPK` on:  
+<p align="center">
+  <a href="https://t.me/yourchannelorusername"><img width="60px" alt="Telegram" src="https://img.icons8.com/fluency/96/0088CC/telegram-app.png"/></a>
+  <a href="https://discord.gg/Y2zXVwKe"><img width="60px" alt="Discord" src="https://img.icons8.com/fluency/96/FFA500/discord-logo.png"/></a> &#8287;
+  <a href="https://medium.com/@FakerPK"><img width="60px" src="https://img.icons8.com/ios-filled/96/F0F0EC/medium-monogram.png" alt="Medium"></a>&#8287;
+</p>
 
-## **Social Links**
-- **Discord Community**: [Join Now](https://discord.gg/Z58YmYwr)
-- **Telegram**: [Subscribe Here](https://t.me/FakerPK)
+----
