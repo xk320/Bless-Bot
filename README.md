@@ -1,4 +1,4 @@
-# Bless Network Bot v1.2 - Automate Node Management and Mining, No Hardware ID Needed!
+# UPDATE: Bless Network Bot v1.2 - Automate Node Management and Mining, No Hardware ID Needed!
 Automate your Bless Network node management with this Python-based script. Manage multiple devices, handle WebSocket connections, and maximize your node earnings 24/7! Perfect for VPS setups.
 
 ![AGPL License](https://img.shields.io/badge/License-AGPL%20v3-blue.svg)
@@ -10,6 +10,7 @@ Automate your Bless Network node management with this Python-based script. Manag
 * Supports Multiple Nodes  for simultaneous operations.
 * Keeps nodes alive and boosts network uptime for maximum earnings.
 * Works seamlessly for better reliability.
+* No more manual registration of nodes required.
 
 ---
 ### Use My Refferal:
@@ -42,9 +43,65 @@ This will print something like:
 ```
 
 ## **Multiple Nodes**
-1. You can remove the extension after obtaining its ```peerPubKey``` and download it again to get a new one.
-2. Repeat this process as many times as you like.
+1. You can remove the extension after obtaining its ```peerPubKey```.
+2. Now you can change only the last digit of the ```peerPubKey``` and copy paste it in place for the other nodeIDs.
 3. There is a cap of 5 devices so no need to go all out.
+4. Your `data.py` file can look something like this:
+```javascript
+config = [
+    {
+        "usertoken": "AUTH_TOKEN_1",
+        "nodes": [
+            {
+                "nodeId": "12D..................................k",
+                "proxy": ""  #format: socks5://username:pass@ip:port
+            },
+            {
+                "nodeId": "12D..................................2",
+                "proxy": ""  #format: socks5://username:pass@ip:port
+            },
+            {
+                "nodeId": "12D..................................3",
+                "proxy": ""  #format: socks5://username:pass@ip:port
+            },
+            {
+                "nodeId": "12D..................................4",
+                "proxy": ""  #format: socks5://username:pass@ip:port
+            },
+            {
+                "nodeId": "12D..................................5",
+                "hardwareId": "HARDWARE_ID", #stays same for all nodes
+                "proxy": ""  #format: socks5://username:pass@ip:port
+            },
+        ]
+    },
+    {
+        "usertoken": "AUTH_TOKEN_2",
+        "nodes": [
+            {
+                "nodeId": "12D..................................6",
+                "proxy": ""  #format: socks5://username:pass@ip:port
+            },
+            {
+                "nodeId": "12D..................................7",
+                "proxy": ""  #format: socks5://username:pass@ip:port
+            },
+            {
+                "nodeId": "12D..................................8",
+                "proxy": ""  #format: socks5://username:pass@ip:port
+            },
+            {
+                "nodeId": "12D..................................9",
+                "proxy": ""  #format: socks5://username:pass@ip:port
+            },
+            {
+                "nodeId": "12D..................................j",
+                "proxy": ""  #format: socks5://username:pass@ip:port
+            }
+        ]
+    } #add a comma and copy paste if you want to add more auth tokens
+]
+```
 > **SECRET INFO**:
 > The 5 `PubKeys` you extract from one account, can be used with other accounts.
 > 
