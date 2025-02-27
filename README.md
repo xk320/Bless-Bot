@@ -97,12 +97,6 @@ config = [
     } #add a comma and copy paste if you want to add more auth tokens
 ]
 ```
-> **SECRET INFO**:
-> The 5 `PubKeys` you extract from one account, can be used with other accounts.
-> 
-> Remove your extension then create a new account with your refferal code and extract the `B7S_AUTH_TOKEN`.
-> 
-> Add the `B7S_AUTH_TOKEN` to the `usertoken` field in the ``data.py`` and copy paste the ``PubKeys`` from before and run the script.
 
 ## **依赖**
 - **Python**: Install it from [python.org](https://www.python.org/downloads/) or use the command below for Ubuntu:
@@ -113,8 +107,8 @@ config = [
 ## **安装文档**
 ### 第一步: 下载代码
 ```bash
-git clone https://github.com/FakerPK/BlessNetworkBot.git
-cd BlessNetworkBot
+git clone https://github.com/xk320/Bless-Bot.git
+cd Bless-Bot
 ```
 
 ### 第二步: 安装依赖
